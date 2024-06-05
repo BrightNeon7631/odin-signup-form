@@ -1,0 +1,248 @@
+@font-face {
+    font-family: norse-bold;
+    src: url('assets/fonts/Norse-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.left {
+    background-image: url(assets/images/image.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 290px;
+    height: 100vh;
+    position: relative;
+    flex: 3;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 22%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.odin-text {
+    font-family: norse-bold, helvetica, sans-serif;
+    font-size: 10vh;
+}
+
+.odin-logo {
+    max-height: 100%;
+}
+
+.card-footer {
+    position: absolute;
+    color: white;
+    bottom: 2%;
+    font-size: 1rem;
+}
+
+a {
+    color: white;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 5;
+}
+
+h1,
+.site-head-container,
+.footer-container {
+    font-family: Helvetica, sans-serif;
+}
+
+.site-head-container {
+    background-color: #f6f7f8;
+    border-bottom: 1px solid #E5E7EB;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0px 0px 60px 45px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.site-head-container div { 
+    max-width: 85%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 85%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+label {
+    font-family: sans-serif;
+}
+
+input {
+    font-size: 1em;
+    min-width: 300px;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.footer-container {
+    background-color: #f6f7f8;
+    border-top: 1px solid #E5E7EB;
+    margin-top: 50px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+}
+
+button {
+    width: 270px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #596D48;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: bold;
+    box-shadow: 20px 10px 10px grey;
+}
+
+.footer-login1 {
+    font-size: 20px;
+}
+
+.footer-login2 {
+    color: #596D48;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 95%;
+}
+
+input:focus {
+    border: 1px solid #596D48;
+    background-color: #f8f4f4;
+    box-shadow: 0 0 1rem #596D48;
+}
+
+input:invalid,
+.wrong-passwords {
+    border: 1px solid red;
+}
+
+#passwords-info {
+    color: red;
+}
+
+@media only screen and (min-width: 1316px) {
+    .form-container {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .left {
+        max-height: 300px;
+        flex: auto;
+    }
+
+    .site-head-container {
+        padding: 25px 0px 60px 45px;
+    }
+
+    .card-body {
+        height: 30%;
+    }
+
+    .odin-text {
+        font-size: 5vh;
+    }
+
+    .footer-container {
+        flex: auto;
+    }
+
+    .footer-container {
+        align-items: center;
+    }
+
+    form {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 774px) {
+    body {
+        height: auto;
+    }
+
+    .left {
+        max-height: 250px;
+        flex: auto;
+    }
+
+    .site-head-container {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+
+    .form-container {
+        align-items: center;
+        margin: 0;
+    }
+}
