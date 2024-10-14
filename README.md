@@ -27,9 +27,7 @@ I started and finished this project in July 2022.
 
 ## Links
 
-[Live Demo](https://brightneon7631.github.io/odin-signup-form/)
-
-[My Other Projects](https://brightneon7631.github.io/odin-scrimba-projects/)
+[Live Demo](https://bn7631-odin-signup-form.pages.dev)
 
 ## Screenshots
 
@@ -45,7 +43,7 @@ I started and finished this project in July 2022.
 
 ![Mobile Screenshot](screenshots/mobile.png)
 
-## Sources for images and fonts
+## Sources
 
 - https://unsplash.com/photos/25xggax4bSA by Halie West
 - https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form by The Odin Project contributors
@@ -53,5 +51,5 @@ I started and finished this project in July 2022.
 ## Deployment
 
 ```bash
-  git clone
+  git clone https://github.com/BrightNeon7631/odin-signup-form.git
 ```
